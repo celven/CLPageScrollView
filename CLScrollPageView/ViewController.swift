@@ -14,8 +14,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         //测试数据
+        let titleArray:[String] = ["笑话","看看","笑到","手势","笑话","看看","笑到","手势"]
+ 
         var vcArray:[UIViewController] = [UIViewController]()
-        for _ in 0..<12 {
+        for _ in 0..<titleArray.count {
             
             let vc = UIViewController()
             vc.view.backgroundColor = UIColor.cl_randomColor()
@@ -27,7 +29,7 @@ class ViewController: UIViewController {
         let pageView = CLScrollPageView(frame: CGRect(x: 0, y: 64, width: KScreenWidht, height: KScreenHeight))
         view.addSubview(pageView)
         //设置标题
-        pageView.titleArray =  ["笑话","呵呵大神大神的","看看","笑话","呵呵","看看","笑话","呵呵","看看打的的","笑话","呵呵","看看",]
+        pageView.titleArray =  titleArray
         //设置view
         pageView.pageArray = vcArray
         

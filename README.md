@@ -13,7 +13,7 @@ let pageView = CLScrollPageView(frame: CGRect(x: 0, y: 64, width: KScreenWidht, 
 
 ###设置标题
 ```
-pageView.titleArray =  ["笑话","呵呵大神大神的","看看","笑话","呵呵","看看","笑话","呵呵","看看打的的","笑话","呵呵","看看",]
+pageView.titleArray =  titleArray
 ```
 ###设置view
 ```

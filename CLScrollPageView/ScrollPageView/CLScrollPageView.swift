@@ -75,19 +75,37 @@ extension CLScrollPageView {
             return
         }
         
-        
+      
+
         //MARK: 设置数据
         let margin:CGFloat = 10
         var width:CGFloat = 0
+        
+        //计算titleArray文字的宽度
+        var textWidth:CGFloat = 0
+        let textFont:CGFloat = 17.5 //17号字宽度17.5
+        for str in titleArray {
+            textWidth += CGFloat(str.characters.count) * textFont + margin * 2
+        }
         for i in (0..<titleArray.count){
             //title
             let titleButton:UIButton = UIButton(title: titleArray[i], titleColor: UIColor.black)
             titleScrollView.addSubview(titleButton)
-            print(titleButton.bounds.size.width)
             titleButton.addTarget(self, action: #selector(self.titleButtonClick(button:)), for: .touchUpInside)
-            titleButton.frame = CGRect(x: width , y: 5.0, width: titleButton.bounds.size.width+margin, height: 40)
-            width += titleButton.bounds.size.width
+            
+            //判断传进的title文字宽度,设置frame
+            if (textWidth < KScreenWidht) {
+                
+                titleButton.frame = CGRect(x: width , y: 5.0, width: KScreenWidht / CGFloat(titleArray.count), height: 40)
+                width += titleButton.bounds.size.width
+            }else{
+                
+                titleButton.frame = CGRect(x: width , y: 5.0, width: titleButton.bounds.size.width + margin, height: 40)
+                width += titleButton.bounds.size.width + margin
+            }
+            
             titleButton.tag = i + 1000
+            
             //默认选中第一个
             if i == 0 {
                 titleButtonClick(button: titleButton)
