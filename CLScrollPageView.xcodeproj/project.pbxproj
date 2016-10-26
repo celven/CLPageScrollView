@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF5BF8201DC0CA26009FE851 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5BF81F1DC0CA26009FE851 /* AppDelegate.swift */; };
+		DF5BF8221DC0CA26009FE851 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5BF8211DC0CA26009FE851 /* ViewController.swift */; };
+		DF5BF8251DC0CA26009FE851 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5BF8231DC0CA26009FE851 /* Main.storyboard */; };
+		DF5BF8271DC0CA26009FE851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF5BF8261DC0CA26009FE851 /* Assets.xcassets */; };
+		DF5BF82A1DC0CA26009FE851 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF5BF8281DC0CA26009FE851 /* LaunchScreen.storyboard */; };
+		DF5BF8351DC0CA61009FE851 /* CLScrollPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5BF8321DC0CA61009FE851 /* CLScrollPageView.swift */; };
+		DF5BF8361DC0CA61009FE851 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5BF8331DC0CA61009FE851 /* UIButton+Extension.swift */; };
+		DF5BF8371DC0CA61009FE851 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5BF8341DC0CA61009FE851 /* UIColor+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DF5BF81C1DC0CA26009FE851 /* CLScrollPageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLScrollPageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF5BF81F1DC0CA26009FE851 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DF5BF8211DC0CA26009FE851 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF5BF8241DC0CA26009FE851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF5BF8261DC0CA26009FE851 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF5BF8291DC0CA26009FE851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF5BF82B1DC0CA26009FE851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF5BF8321DC0CA61009FE851 /* CLScrollPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLScrollPageView.swift; sourceTree = "<group>"; };
+		DF5BF8331DC0CA61009FE851 /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		DF5BF8341DC0CA61009FE851 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF5BF8191DC0CA26009FE851 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF5BF8131DC0CA26009FE851 = {
+			isa = PBXGroup;
+			children = (
+				DF5BF81E1DC0CA26009FE851 /* CLScrollPageView */,
+				DF5BF81D1DC0CA26009FE851 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF5BF81D1DC0CA26009FE851 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF5BF81C1DC0CA26009FE851 /* CLScrollPageView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF5BF81E1DC0CA26009FE851 /* CLScrollPageView */ = {
+			isa = PBXGroup;
+			children = (
+				DF5BF8311DC0CA54009FE851 /* ScrollPageView */,
+				DF5BF81F1DC0CA26009FE851 /* AppDelegate.swift */,
+				DF5BF8211DC0CA26009FE851 /* ViewController.swift */,
+				DF5BF8231DC0CA26009FE851 /* Main.storyboard */,
+				DF5BF8261DC0CA26009FE851 /* Assets.xcassets */,
+				DF5BF8281DC0CA26009FE851 /* LaunchScreen.storyboard */,
+				DF5BF82B1DC0CA26009FE851 /* Info.plist */,
+			);
+			path = CLScrollPageView;
+			sourceTree = "<group>";
+		};
+		DF5BF8311DC0CA54009FE851 /* ScrollPageView */ = {
+			isa = PBXGroup;
+			children = (
+				DF5BF8321DC0CA61009FE851 /* CLScrollPageView.swift */,
+				DF5BF8331DC0CA61009FE851 /* UIButton+Extension.swift */,
+				DF5BF8341DC0CA61009FE851 /* UIColor+Extension.swift */,
+			);
+			path = ScrollPageView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF5BF81B1DC0CA26009FE851 /* CLScrollPageView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF5BF82E1DC0CA26009FE851 /* Build configuration list for PBXNativeTarget "CLScrollPageView" */;
+			buildPhases = (
+				DF5BF8181DC0CA26009FE851 /* Sources */,
+				DF5BF8191DC0CA26009FE851 /* Frameworks */,
+				DF5BF81A1DC0CA26009FE851 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CLScrollPageView;
+			productName = CLScrollPageView;
+			productReference = DF5BF81C1DC0CA26009FE851 /* CLScrollPageView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF5BF8141DC0CA26009FE851 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = cleven;
+				TargetAttributes = {
+					DF5BF81B1DC0CA26009FE851 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DF5BF8171DC0CA26009FE851 /* Build configuration list for PBXProject "CLScrollPageView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF5BF8131DC0CA26009FE851;
+			productRefGroup = DF5BF81D1DC0CA26009FE851 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF5BF81B1DC0CA26009FE851 /* CLScrollPageView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF5BF81A1DC0CA26009FE851 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF5BF82A1DC0CA26009FE851 /* LaunchScreen.storyboard in Resources */,
+				DF5BF8271DC0CA26009FE851 /* Assets.xcassets in Resources */,
+				DF5BF8251DC0CA26009FE851 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF5BF8181DC0CA26009FE851 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF5BF8221DC0CA26009FE851 /* ViewController.swift in Sources */,
+				DF5BF8361DC0CA61009FE851 /* UIButton+Extension.swift in Sources */,
+				DF5BF8201DC0CA26009FE851 /* AppDelegate.swift in Sources */,
+				DF5BF8351DC0CA61009FE851 /* CLScrollPageView.swift in Sources */,
+				DF5BF8371DC0CA61009FE851 /* UIColor+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DF5BF8231DC0CA26009FE851 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF5BF8241DC0CA26009FE851 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF5BF8281DC0CA26009FE851 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF5BF8291DC0CA26009FE851 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF5BF82C1DC0CA26009FE851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF5BF82D1DC0CA26009FE851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF5BF82F1DC0CA26009FE851 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CLScrollPageView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.CLScrollPageView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DF5BF8301DC0CA26009FE851 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CLScrollPageView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.CLScrollPageView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF5BF8171DC0CA26009FE851 /* Build configuration list for PBXProject "CLScrollPageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF5BF82C1DC0CA26009FE851 /* Debug */,
+				DF5BF82D1DC0CA26009FE851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF5BF82E1DC0CA26009FE851 /* Build configuration list for PBXNativeTarget "CLScrollPageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF5BF82F1DC0CA26009FE851 /* Debug */,
+				DF5BF8301DC0CA26009FE851 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF5BF8141DC0CA26009FE851 /* Project object */;
+}
