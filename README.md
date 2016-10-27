@@ -7,14 +7,13 @@
 
 ###实例化pageView
 ```swift
-let pageView = CLScrollPageView(frame: CGRect(x: 0, y: 64, width: KScreenWidht, height: KScreenHeight))
-    view.addSubview(pageView)
-```
+//实例化
+let pageView = CLScrollPageView(frame:CGRect(x: 0, y: 64, width: KScreenWidht, height: KScreenHeight),
+titleArray: titleArray,
+pageArray: vcArray)
+``
+###添加
 
-###设置标题
 ```
-pageView.titleArray =  titleArray
-```
-###设置view
-```
-pageView.pageArray = vcArray
+view.addSubview(pageView)
+``
