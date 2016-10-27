@@ -1,4 +1,4 @@
-# CLPageScrollView
+# CLScrollPageView
 # 使用swift3.0 写的一个小demo,简单实现功能,后续会更新...
 
 ![](http://f.hiphotos.baidu.com/image/pic/item/5ab5c9ea15ce36d32808e2e832f33a87e850b1de.jpg)
