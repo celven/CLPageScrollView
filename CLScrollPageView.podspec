@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
     swift3.0,demo
   }
 
-  s.source_files = 'CLScrollPageView/*.swift'
+  s.source_files = 'CLScrollPageView/*'
 
   s.ios.frameworks = 'Foundation', 'UIKit'
 
