@@ -12,28 +12,26 @@ let KScreenWidht:CGFloat = UIScreen.main.bounds.width
 let KScreenHeight:CGFloat = UIScreen.main.bounds.height
 
 class CLScrollPageView: UIView {
-    
-    //MARK: 公共属性
-    //设置标题
-    var titleArray:[String]?
-    //设置页面
-    var pageArray:[UIViewController]?{
-        didSet{
-            setupUI()
-        }
-    }
-    
-    
-    
+
     //MARK: 私有属性
     fileprivate var selectButton:UIButton = UIButton()
+    //设置标题
+    fileprivate var titleArray:[String]
+    //设置页面
+    fileprivate var pageArray:[UIViewController]
     
     //MARK: 构造方法
-    override init(frame: CGRect) {
+    
+    init(frame:CGRect,titleArray:[String],pageArray:[UIViewController]){
+        self.titleArray = titleArray
+        self.pageArray = pageArray
+        
         super.init(frame: frame)
         
-        
+        setupUI()
     }
+    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -66,16 +64,7 @@ extension CLScrollPageView {
         pageScrollView.delegate = self
         pageScrollView.bounces = false
         addSubview(pageScrollView)
-        
-        
-        guard let titleArray = titleArray else {
-            return
-        }
-        guard let pageArray = pageArray else {
-            return
-        }
-        
-      
+    
 
         //MARK: 设置数据
         let margin:CGFloat = 10

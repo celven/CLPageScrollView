@@ -25,13 +25,13 @@ class ViewController: UIViewController {
             vcArray.append(vc)
         }
         
-        
-        let pageView = CLScrollPageView(frame: CGRect(x: 0, y: 64, width: KScreenWidht, height: KScreenHeight))
+        //实例化
+        let pageView = CLScrollPageView(frame:CGRect(x: 0, y: 64, width: KScreenWidht, height: KScreenHeight),
+                                        titleArray: titleArray,
+                                        pageArray: vcArray)
+        //添加
         view.addSubview(pageView)
-        //设置标题
-        pageView.titleArray =  titleArray
-        //设置view
-        pageView.pageArray = vcArray
+
         
         self.automaticallyAdjustsScrollViewInsets = false
         
