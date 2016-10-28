@@ -11,9 +11,9 @@
 let pageView = CLScrollPageView(frame:CGRect(x: 0, y: 64, width: KScreenWidht, height: KScreenHeight),
 titleArray: titleArray,
 pageArray: vcArray)
-``
+```
 ###添加
 
 ```
 view.addSubview(pageView)
-``
+```
