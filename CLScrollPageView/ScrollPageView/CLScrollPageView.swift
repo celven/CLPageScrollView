@@ -7,9 +7,6 @@
 //
 
 import UIKit
-//MARK: 公共属性
-let KScreenWidht:CGFloat = UIScreen.main.bounds.width
-let KScreenHeight:CGFloat = UIScreen.main.bounds.height
 
 class CLScrollPageView: UIView {
 
@@ -37,7 +34,7 @@ class CLScrollPageView: UIView {
     }
     
     //MARK: 懒加载
-    fileprivate lazy var titleScrollView:UIScrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width:KScreenWidht , height: 40))
+    fileprivate lazy var titleScrollView:UIScrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width:UIScreen.main.bounds.width , height: 40))
     
     
     fileprivate lazy var pageScrollView:UIScrollView = UIScrollView(frame: .zero)
@@ -58,7 +55,7 @@ extension CLScrollPageView {
         
         //pageScrollView
         let maxY = titleScrollView.frame.maxY
-        pageScrollView.frame = CGRect(x: 0, y: maxY, width: KScreenWidht, height: KScreenHeight - maxY)
+        pageScrollView.frame = CGRect(x: 0, y: maxY, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - maxY)
         pageScrollView.showsHorizontalScrollIndicator = true
         pageScrollView.isPagingEnabled = true
         pageScrollView.delegate = self
@@ -83,9 +80,9 @@ extension CLScrollPageView {
             titleButton.addTarget(self, action: #selector(self.titleButtonClick(button:)), for: .touchUpInside)
             
             //判断传进的title文字宽度,设置frame
-            if (textWidth < KScreenWidht) {
+            if (textWidth < UIScreen.main.bounds.width) {
                 
-                titleButton.frame = CGRect(x: width , y: 5.0, width: KScreenWidht / CGFloat(titleArray.count), height: 40)
+                titleButton.frame = CGRect(x: width , y: 5.0, width: UIScreen.main.bounds.width / CGFloat(titleArray.count), height: 40)
                 width += titleButton.bounds.size.width
             }else{
                 
@@ -103,12 +100,12 @@ extension CLScrollPageView {
             //页面
             let vc:UIViewController = pageArray[i]
             pageScrollView.addSubview(vc.view)
-            vc.view.frame = bounds.offsetBy(dx: CGFloat(i) * KScreenWidht, dy: 0)
+            vc.view.frame = bounds.offsetBy(dx: CGFloat(i) * UIScreen.main.bounds.width, dy: 0)
         }
         
         
         titleScrollView.contentSize = CGSize(width: Int(width), height: 0)
-        pageScrollView.contentSize = CGSize(width: pageArray.count * Int(KScreenWidht), height: 0)
+        pageScrollView.contentSize = CGSize(width: pageArray.count * Int(UIScreen.main.bounds.width), height: 0)
         
         
     }
@@ -121,7 +118,7 @@ extension CLScrollPageView {
         selectButton = button
         
         //滚动到指定的位置
-        pageScrollView.setContentOffset(CGPoint(x: (button.tag - 1000) * Int(KScreenWidht), y: 0), animated: true)
+        pageScrollView.setContentOffset(CGPoint(x: (button.tag - 1000) * Int(UIScreen.main.bounds.width), y: 0), animated: true)
         
         setUptitleButtonCenter(button: button)
         
@@ -130,14 +127,14 @@ extension CLScrollPageView {
     //设置标题按钮居中
     fileprivate func setUptitleButtonCenter(button:UIButton){
         
-        var offsetX:CGFloat = button.center.x - KScreenWidht * 0.5
+        var offsetX:CGFloat = button.center.x - UIScreen.main.bounds.width * 0.5
         
         if offsetX < 0 {
             offsetX = 0
         }
         
         //最大的偏移量
-        let maxX:CGFloat = titleScrollView.contentSize.width - KScreenWidht
+        let maxX:CGFloat = titleScrollView.contentSize.width - UIScreen.main.bounds.width
         if offsetX > maxX {
             
             offsetX = maxX

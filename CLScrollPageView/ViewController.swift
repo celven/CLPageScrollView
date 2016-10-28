@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         }
         
         //实例化
-        let pageView = CLScrollPageView(frame:CGRect(x: 0, y: 64, width: KScreenWidht, height: KScreenHeight),
+        let pageView = CLScrollPageView(frame:CGRect(x: 0, y: 64, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height),
                                         titleArray: titleArray,
                                         pageArray: vcArray)
         //添加
