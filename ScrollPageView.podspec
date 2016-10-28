@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
   s.name         = "ScrollPageView"
   s.version      = "1.0.3"
-  s.summary      = "A short description of CLScrollPageView."
+  s.summary      = "CLScrollPageView."
 
   #s.description  = <<-DESC
  
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
 
   # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  s.platform     = :ios, "9.0"
 
   s.source       = { :git => "https://github.com/cleven1/CLScrollPageView.git", :tag => "1.0.3" }
 
