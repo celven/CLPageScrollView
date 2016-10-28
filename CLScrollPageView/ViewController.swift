@@ -20,17 +20,17 @@ class ViewController: UIViewController {
         for _ in 0..<titleArray.count {
             
             let vc = UIViewController()
-//            vc.view.backgroundColor = UIColor.cl_randomColor()
+            vc.view.backgroundColor = UIColor.cl_randomColor()
             
             vcArray.append(vc)
         }
         
         //实例化
-//        let pageView = CLScrollPageView(frame:CGRect(x: 0, y: 64, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height),
-//                                        titleArray: titleArray,
-//                                        pageArray: vcArray)
-//        //添加
-//        view.addSubview(pageView)
+        let pageView = CLScrollPageView(frame:CGRect(x: 0, y: 64, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height),
+                                        titleArray: titleArray,
+                                        pageArray: vcArray)
+        //添加
+        view.addSubview(pageView)
 
         
         self.automaticallyAdjustsScrollViewInsets = false
