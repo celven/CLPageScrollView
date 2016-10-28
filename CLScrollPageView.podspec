@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
 
-  s.name         = "ScrollPageView"
+  s.name         = "CLScrollPageView"
   s.version      = "1.0.3"
   s.summary      = "CLScrollPageView."
 
