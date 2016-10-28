@@ -7,8 +7,7 @@ Pod::Spec.new do |s|
   s.summary      = "A short description of CLScrollPageView."
 
   #s.description  = <<-DESC
-                   DESC
-
+ 
   s.homepage     = "https://github.com/cleven1/CLScrollPageView"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
