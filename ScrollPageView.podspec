@@ -9,30 +9,20 @@ Pod::Spec.new do |s|
   #s.description  = <<-DESC
                    DESC
 
-  s.homepage     = "http://EXAMPLE/CLScrollPageView"
+  s.homepage     = "https://github.com/cleven1/CLScrollPageView"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
-  s.license      = "MIT (example)"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = "MIT"
 
   s.author             = { "cleven" => "cleven_zhao@foxmail.com" }
-  # Or just: s.author    = "cleven"
-  # s.authors            = { "cleven" => "cleven_zhao@foxmail.com" }
-  # s.social_media_url   = "http://twitter.com/zhaoyongqiang"
+
 
   # s.platform     = :ios
   # s.platform     = :ios, "5.0"
 
-  #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
-  # s.osx.deployment_target = "10.7"
-  # s.watchos.deployment_target = "2.0"
-  # s.tvos.deployment_target = "9.0"
-
-
   s.source       = { :git => "https://github.com/cleven1/CLScrollPageView.git", :tag => "#{1.0.3}" }
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files  = "ScrollPageView", "*.{swift}"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
