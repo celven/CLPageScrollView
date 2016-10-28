@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   # s.platform     = :ios
   # s.platform     = :ios, "5.0"
 
-  s.source       = { :git => "https://github.com/cleven1/CLScrollPageView.git", :tag => "#{1.0.3}" }
+  s.source       = { :git => "https://github.com/cleven1/CLScrollPageView.git", :tag => "1.0.3" }
 
   s.source_files  = "ScrollPageView", "*.{swift}"
   #s.exclude_files = "Classes/Exclude"
