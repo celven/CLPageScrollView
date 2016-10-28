@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.version      = "1.0.3"
   s.summary      = "CLScrollPageView."
 
-  #s.description  = "swift 3.0"
+  s.description  = "swift 3.0"
  
   s.homepage     = "https://github.com/cleven1/CLScrollPageView"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/cleven1/CLScrollPageView.git", :tag => "1.0.3" }
 
-  s.source_files  = 'ScrollPageView/*'
+  s.source_files  = 'CLScrollPageView/*'
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
