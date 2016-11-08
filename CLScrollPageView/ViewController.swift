@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         //测试数据
-        let titleArray:[String] = ["笑话","看看","笑到","手势","笑话","看看","笑到","手势"]
+        let titleArray:[String] = ["笑话","看看","笑到","手势"]
  
         var vcArray:[UIViewController] = [UIViewController]()
         for _ in 0..<titleArray.count {
