@@ -5,6 +5,7 @@ Pod::Spec.new do |s|
   s.name         = "CLScrollPageView"
   s.version      = "1.0.3"
   s.summary      = "CLScrollPageView."
+  echo "3.0" > .swift-version
 
   s.description  = "swift 3.0"
  
