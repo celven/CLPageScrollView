@@ -5,24 +5,24 @@ Pod::Spec.new do |s|
   s.name         = "CLScrollPageView"
   s.version      = "1.0.3"
   s.summary      = "CLScrollPageView."
-  echo "3.0" > .swift-version
 
   s.description  = "swift 3.0"
  
   s.homepage     = "https://github.com/cleven1/CLScrollPageView"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
-  s.license      = "MIT"
+  s.license = {:type => 'MIT', :file => 'LICENSE'}
 
   s.author             = { "cleven" => "cleven_zhao@foxmail.com" }
 
-
-  # s.platform     = :ios
-  s.platform     = :ios, "8.0" ,"swift" ,"3.0"
+  s.platform     = :ios, "8.0"
 
   s.source       = { :git => "https://github.com/cleven1/CLScrollPageView.git", :tag => "1.0.3" }
 
-  s.source_files  = 'CLScrollPageView/*.{h.m.swift}'
+  s.source_files  = 'CLScrollPageView/*.{swift}'
+
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
+
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
